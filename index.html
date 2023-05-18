@@ -1,38 +1,99 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Hello, Tailwind!</title>
-    <link rel="stylesheet" href="src/css/output.css" />
-  </head>
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Hello, Tailwind!</title>
+		<link rel="stylesheet" href="src/css/output.css" />
+	</head>
 
-  <body
-    class="flex h-screen items-center justify-center bg-gradient-to-r from-cyan-500 to-blue-500"
-  >
-    <main class="w-2/3 h-2/3 bg-slate-100 rounded-md">
-      <header class="flex justify-between p-20 pt-10 pb-10 border-b-2">
-        <p class="text-2xl text-slate-700">Choose the amount</p>
-        <nav class="flex gap-4">
-          <p>Bill yearly</p>
-          <input type="radio" name="" id="" />
-          <p>Bill monthly</p>
-        </nav>
-      </header>
+	<body
+		class="flex h-screen items-center justify-center bg-gradient-to-r from-cyan-500 to-blue-500"
+	>
+		<main class="flex flex-col pl-20 pr-20 w-2/3 h-2/3 bg-slate-200 rounded-md">
+			<header class="flex justify-between pt-10 pb-10 border-b-2 border-red-50">
+				<p class="flex basis-2/5 text-2xl text-slate-700">
+					Choose the amount of storage that's right for you
+				</p>
+				<nav class="flex items-center gap-4">
+					<p>Bill yearly</p>
+					<input type="checkbox" name="bill" id="bill" />
+					<p>Bill monthly</p>
+				</nav>
+			</header>
 
-      <div class="flex p-20">
-        <form action="" class="flex flex-col gap-10">
-          <input type="text" class="bg-slate-200 p-2 rounded-md" placeholder="Digite aqui." />
-		  <input type="text" class="bg-slate-200 p-2 rounded-md" placeholder="Digite aqui." />
-		  <input type="text" class="bg-slate-200 p-2 rounded-md" placeholder="Digite aqui." />
-		  <input  type="text" class="bg-slate-200 p-2 rounded-md" placeholder="Digite aqui."
-          />
-        </form>
-      </div>
-      <div class=""></div>
-    </main>
+			<article class="flex flex-row h-full w-full">
+				<div class="flex h-full w-1/2 p-8 pl-0">
+					<form action="" class="flex flex-col justify-between w-full">
+						<input
+							type="text"
+							class="bg-slate-50 pl-4 rounded-md h-1/6 w-full"
+							placeholder="Full name"
+						/>
+						<input
+							type="text"
+							class="bg-slate-50 pl-4 rounded-md h-1/6 w-full"
+							placeholder="Email"
+						/>
+						<input
+							type="text"
+							class="bg-slate-50 pl-4 rounded-md h-1/6 w-full"
+							placeholder="Password"
+						/>
+						<input
+							type="text"
+							class="bg-slate-50 pl-4 rounded-md h-1/6 w-full"
+							placeholder="Card Number"
+						/>
+						<button class="text-center text-slate-50 font-bold tracking-wider p-4 rounded-md bg-indigo-500 hover:bg-indigo-600">
+							CREATE ACCOUNT
+						</button>
+					</form>
+				</div>
+				<div class="flex flex-col justify-between gap-2 w-1/2 p-8 pr-0">
+					<button
+						class="flex flex-col justify-around w-full h-1/3 p-4 rounded-md bg-slate-50 border-2 hover:border-indigo-500 hover:bg-slate-100"
+					>
+						<div class="flex text-lg font-bold text-slate-600">
+							<p>Essential</p>
+						</div>
 
-    <footer class=""></footer>
-  </body>
+						<div class="flex justify-between w-full">
+							<p><span class="font-bold">1 TB</span> of storage</p>
+							<p class="text-slate-600 font-bold">40$ / mo</p>
+						</div>
+					</button>
+
+					<button
+						class="flex flex-col justify-around w-full h-1/3 p-4 rounded-md bg-slate-50 border-2 hover:border-indigo-500 hover:bg-slate-100"
+					>
+						<div class="flex text-lg font-bold text-slate-600">
+							<p>Pro</p>
+						</div>
+
+						<div class="flex justify-between w-full">
+							<p><span class="font-bold">1 TB</span> of storage</p>
+							<p class="text-slate-600 font-bold">40$ / mo</p>
+						</div>
+					</button>
+
+					<button
+						class="flex flex-col justify-around w-full h-1/3 p-4 rounded-md bg-slate-50 border-2 hover:border-purple-200 hover:bg-slate-100"
+					>
+						<div class="flex text-lg font-bold text-slate-600">
+							<p>Premium</p>
+						</div>
+
+						<div class="flex justify-between w-full">
+							<p><span class="font-bold">1 TB</span> of storage</p>
+							<p class="text-slate-600 font-bold">40$ / mo</p>
+						</div>
+					</button>
+				</div>
+			</article>
+		</main>
+
+		<footer class=""></footer>
+	</body>
 </html>

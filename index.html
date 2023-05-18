@@ -1,16 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Hello, Tailwind!</title>
-        <link rel="stylesheet" href="src/css/output.css">
-	</head>
-	<body>
-        <h1 class="ml-24 text-6xl text-red-900">Hello, Tailwind!</h1>
-		<h1 class="ml-20 text-4xl text-red-700">Hello, Tailwind!</h1>
-		<h1 class="ml-24 text-6xl text-red-900">Hello, Tailwind!</h1>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hello, Tailwind!</title>
+    <link rel="stylesheet" href="src/css/output.css" />
+  </head>
 
-    </body>
+  <body
+    class="flex h-screen items-center justify-center bg-gradient-to-r from-cyan-500 to-blue-500"
+  >
+    <main class="w-2/3 h-2/3 bg-slate-100 rounded-md">
+      <header class="flex justify-between p-20 pt-10 pb-10 border-b-2">
+        <p class="text-2xl text-slate-700">Choose the amount</p>
+        <nav class="flex gap-4">
+          <p>Bill yearly</p>
+          <input type="radio" name="" id="" />
+          <p>Bill monthly</p>
+        </nav>
+      </header>
+
+      <div class="flex p-20">
+        <form action="" class="flex flex-col gap-10">
+          <input type="text" class="bg-slate-200 p-2 rounded-md" placeholder="Digite aqui." />
+		  <input type="text" class="bg-slate-200 p-2 rounded-md" placeholder="Digite aqui." />
+		  <input type="text" class="bg-slate-200 p-2 rounded-md" placeholder="Digite aqui." />
+		  <input  type="text" class="bg-slate-200 p-2 rounded-md" placeholder="Digite aqui."
+          />
+        </form>
+      </div>
+      <div class=""></div>
+    </main>
+
+    <footer class=""></footer>
+  </body>
 </html>

@@ -1,2 +1,2 @@
-# spotify clone tailwind
- Spotify's homescreen, made with Tailwind CSS
+# tailwind form
+ A sign-up screen, inspired by "Refactoring UI"
